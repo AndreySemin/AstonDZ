@@ -1,55 +1,6 @@
 package leasson7;
 
 public class Animals {
-    public static void main(String[] args) {
-
-        Cat Pushok = new Cat("Пушок");
-        Cat Boris = new Cat("Борис");
-        Dog Sharik = new Dog("Шарик");
-        Dog Tyzik = new Dog("Tузик");
-
-        Pushok.run(200);
-        Boris.run(250);
-        Sharik.run(500);
-        Tyzik.run(550);
-
-        Pushok.swim(10);
-        Boris.swim(5);
-        Sharik.swim(15);
-        Tyzik.swim(10);
-
-
-        Bowl bowl = new Bowl(20);
-        Cat[] cats = {Pushok, Boris};
-
-        for (Cat cat : cats) {
-            cat.eat(bowl, 10);
-            System.out.println(cat.getName() + " сыт " + cat.isFull());
-
-        }
-
-        System.out.println(" Остаток еды " + bowl.getFood());
-
-        bowl.addFood(15);
-        System.out.println(" Добавили " + bowl.getFood());
-
-
-        for (Cat cat : cats) {
-            if (!cat.isFull()) {
-                cat.eat(bowl, 10);
-                System.out.println(cat.getName() + " сыт " + cat.isFull());
-
-            }
-        }
-        System.out.println("Остаток еды в миске " + bowl.getFood());
-
-
-        System.out.println(" Всего животных " + Animal.getCountAnimal());
-        System.out.println(" Всего котов " + Cat.getCountCat());
-        System.out.println(" Всего собак " + Dog.getCountDog());
-
-
-    }
 
     public static class Animal {
         static int countAnimal = 0;
@@ -88,7 +39,7 @@ public class Animals {
         static int countCat = 0;
         private boolean isFull;
 
-        Cat(String name) {
+        public Cat(String name) {
             super();
             countCat++;
             this.name = name;
@@ -127,11 +78,11 @@ public class Animals {
         }
 
 
-        static int getCountCat() {
+        public static int getCountCat() {
             return countCat;
         }
 
-        String getName() {
+        public String getName() {
             return name;
         }
 
@@ -145,7 +96,7 @@ public class Animals {
     //Создать массив котов и миску с едой, попросить всех котов покушать из этой миски и потом вывести информацию о сытости котов в консоль.
     //Добавить метод, с помощью которого можно было бы добавлять еду в миску.
 
-    static class Bowl {
+    public static class Bowl {
         private int food;
 
         public Bowl(int food) {
@@ -186,7 +137,7 @@ public class Animals {
         String name;
         static int countDog = 0;
 
-        Dog(String name) {
+        public Dog(String name) {
             super();
             countDog++;
             this.name = name;
@@ -211,7 +162,7 @@ public class Animals {
             }
         }
 
-        static int getCountDog() {
+        public static int getCountDog() {
             return countDog;
         }
 

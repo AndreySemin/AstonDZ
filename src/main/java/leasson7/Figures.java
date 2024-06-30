@@ -1,26 +1,8 @@
 package leasson7;
 
 public class Figures {
-    public static void main(String[] args) {
 
-        System.out.println(" Фигуры");
-        Figure circle = new Circle("blue", "red", 5);
-        Figure rectangle = new Circle.Rectangle(5, 9, "gren", "red");
-        Figure triangle = new Circle.Triangl(5, 5, 5, "black", "yellow");
-
-        System.out.println(" Круг :");
-        circle.printCharacteristic();
-
-        System.out.println(" Прямоугольник : ");
-        circle.printCharacteristic();
-
-        System.out.println(" Треугольник :");
-        circle.printCharacteristic();
-
-
-    }
-
-    interface Figure {
+    public interface Figure {
         double getPerimetr();
 
         double getArea();
@@ -41,7 +23,7 @@ public class Figures {
 
     }
 
-    static class Circle implements Figure {
+    public static class Circle implements Figure {
         private double radius;
         private String fullColor;
         private String borderColor;
@@ -72,7 +54,7 @@ public class Figures {
             return borderColor;
         }
 
-        static class Rectangle implements Figure {
+        public static class Rectangle implements Figure {
             private double width;
             private double heignt;
             private String fullColor;
@@ -104,7 +86,7 @@ public class Figures {
             }
         }
 
-        static class Triangl implements Figure {
+        public static class Triangl implements Figure {
             private double sideA;
             private double sideB;
             private double sideC;
