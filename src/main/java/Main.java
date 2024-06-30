@@ -2,7 +2,7 @@ import leasson6.Park;
 import leasson6.Workers;
 
 import java.util.Arrays;
-
+//2. Создать массив из 5 сотрудников.
 public class Main {
     public static void main(String[] args) {
         Workers[] workers = new Workers[5];
