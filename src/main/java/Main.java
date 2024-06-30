@@ -1,7 +1,7 @@
 import leasson7.Animals;
 import leasson7.Figures;
 
-public class Main {
+public class Main  {
     public static void main(String[] args){
         Animals.Cat Pushok = new Animals.Cat("Пушок");
         Animals.Cat Boris = new Animals.Cat("Борис");
