@@ -2,8 +2,7 @@ package leasson6;
 
 import java.util.ArrayList;
 import java.util.List;
-//2.Создать класс Park с внутренним классом,
-// с помощью объектов которого можно хранить информацию об аттракционах, времени их работы и стоимости.
+//2
 
 public class Park {
     private String name;

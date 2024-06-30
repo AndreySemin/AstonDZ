@@ -3,7 +3,7 @@ import leasson6.Workers;
 
 import java.util.Arrays;
 
-public class Main {
+public class Main  {
     public static void main(String[] args) {
         Workers[] workers = new Workers[5];
         workers[0] = new Workers("Ivan", "Ivanov", "manager", "ivanov@mail.com", "89561235465", 35000, 35);
