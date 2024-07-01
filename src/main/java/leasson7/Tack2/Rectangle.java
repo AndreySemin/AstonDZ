@@ -1,7 +1,5 @@
 package leasson7.Tack2;
 
-import leasson7.Tack2.Figure;
-
 public class Rectangle implements Figure {
     private double width;
     private double heignt;

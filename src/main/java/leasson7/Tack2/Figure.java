@@ -20,7 +20,7 @@ public interface Figure {
         System.out.println(" Периметр " + getPerimetr());
         System.out.println(" Площадь " + getArea());
 
-        return 0;
+        return  0;
     }
 }
 

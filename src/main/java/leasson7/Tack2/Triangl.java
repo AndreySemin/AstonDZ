@@ -1,8 +1,6 @@
 package leasson7.Tack2;
 
-import leasson7.Tack2.Figure;
-
-public  class Triangl implements Figure {
+public class Triangl implements Figure {
     private double sideA;
     private double sideB;
     private double sideC;
@@ -23,7 +21,7 @@ public  class Triangl implements Figure {
 
     public double getArea() {
         double s = (sideA + sideB + sideC) / 2;
-        return Math.sqrt(s * ( s * sideA) * (s * sideB) * (s * sideC));
+        return Math.sqrt(s * (s * sideA) * (s * sideB) * (s * sideC));
 
     }
 

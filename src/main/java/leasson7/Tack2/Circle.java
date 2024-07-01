@@ -10,8 +10,9 @@ public class Circle implements Figure {
         this.fullColor = fullColor;
         this.radius = radius;
     }
+
     @Override
-    public double getPerimetr(){
+    public double getPerimetr() {
         return 2 * Math.PI * radius;
     }
 
@@ -20,7 +21,6 @@ public class Circle implements Figure {
     public double getArea() {
         return Math.PI * radius * radius;
     }
-
 
 
     @Override
@@ -32,8 +32,6 @@ public class Circle implements Figure {
     public String getBorderColor() {
         return borderColor;
     }
-
-
 
 
 }
