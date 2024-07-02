@@ -4,7 +4,7 @@ package leasson7.Tack2;
 
 public interface Figure {
 
-    double getPerimetr();
+    double getPerimeter();
 
     double getArea();
 
@@ -13,14 +13,13 @@ public interface Figure {
 
     String getFullcolor();
 
-    default double printCharacteristic() {
+    default void printCharacteristic() {
 
         System.out.println(" Цвет фона " + getFullcolor());
         System.out.println(" Цвет границ " + getBorderColor());
-        System.out.println(" Периметр " + getPerimetr());
+        System.out.println(" Периметр " + getPerimeter());
         System.out.println(" Площадь " + getArea());
 
-        return  0;
     }
 }
 

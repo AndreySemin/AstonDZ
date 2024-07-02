@@ -1,14 +1,14 @@
 package leasson7;
 
-public abstract class Animals {
+public abstract class Animal {
     public static int countAnimals = 0;
     protected String name;
 
-    Animals() {
+    Animal() {
         countAnimals++;
     }
 
-    public Animals(String name) {
+    public Animal(String name) {
         this.name = name;
         countAnimals++;
     }

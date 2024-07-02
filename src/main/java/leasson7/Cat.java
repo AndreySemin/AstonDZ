@@ -1,20 +1,21 @@
 package leasson7;
 
-public class Cat extends Animals {
+public class Cat extends Animal {
     private boolean isFull = false;
     private static int countCats;
-    //private boolean isFull = false;
+    public static final int MAX_DISTANCE = 200;
 
 
     public Cat(String name) {
         super(name);
         countCats++;
     }
-    /*public Cat (String name, boolean isFull){
+
+    public Cat(String name, boolean isFull) {
         super(name);
-        this.isFull = isFull;
+        this.isFull = false;
         countCats++;
-    }*/
+    }
 
     public static int getCountCats() {
         return countCats;
@@ -22,8 +23,8 @@ public class Cat extends Animals {
 
     @Override
     public void run(int range) {
-        if (range > 200) {
-            System.out.println(name + " Не больше 200 метров ");
+        if (range > MAX_DISTANCE) {
+            System.out.println(name + " Может бежать не больше 200 метров ");
         } else {
             System.out.println(name + " Бежит " + range + " метров.");
         }

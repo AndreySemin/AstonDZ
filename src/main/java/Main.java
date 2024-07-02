@@ -1,11 +1,11 @@
-import leasson7.Animals;
+import leasson7.Animal;
 import leasson7.Bowl;
 import leasson7.Cat;
 import leasson7.Dog;
 import leasson7.Tack2.Circle;
 import leasson7.Tack2.Figure;
 import leasson7.Tack2.Rectangle;
-import leasson7.Tack2.Triangl;
+import leasson7.Tack2.Trianglе;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,7 +30,7 @@ public class Main {
         cats[1].run(250);
         cats[2].run(100);
 
-        System.out.println("Всего животных:" + Animals.getCountAnimals());
+        System.out.println("Всего животных:" + Animal.getCountAnimals());
 
         Bowl bowl = new Bowl(20);
 
@@ -54,13 +54,14 @@ public class Main {
         System.out.println("Фигуры");
         Figure circle = new Circle("blue", "red", 10);
         Figure rectangle = new Rectangle(5, 9, "gren", "red");
-        Figure triangle = new Triangl(5, 5, 5, "black", "yellow");
+        Figure triangle = new Trianglе(5, 5, 5, "black", "yellow");
         System.out.println("Круг");
         circle.printCharacteristic();
         System.out.println("Прямоугольник");
         rectangle.printCharacteristic();
         System.out.println("Треугольник");
         triangle.printCharacteristic();
+
 
 
     }

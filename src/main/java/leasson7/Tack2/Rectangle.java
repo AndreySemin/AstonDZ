@@ -6,14 +6,14 @@ public class Rectangle implements Figure {
     private String fullColor;
     private String borderColor;
 
-    public Rectangle(double width, double heignt, String fullColor, String borderColor) {
+    public Rectangle(double width, double height, String fullColor, String borderColor) {
         this.width = width;
-        this.heignt = heignt;
+        this.heignt = height;
         this.fullColor = fullColor;
         this.borderColor = borderColor;
     }
 
-    public double getPerimetr() {
+    public double getPerimeter() {
         return 2 * (width + heignt);
     }
 
