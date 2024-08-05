@@ -66,7 +66,7 @@ public class Main {
         triangle.printCharacteristic();**/
 
 
-//lesson 6
+//lesson 6 Park
 /**
 import leasson6.Park;
 import leasson6.Workers;
@@ -87,7 +87,7 @@ public class Main {
         **/
   master
 
-
+//lesson 6 Workers
         Park park = new Park("Аркадия");
         park.addAtttraction("Колесо", "10:00-20:00", 200);
         park.addAtttraction("Хали Гали", "10:00-20:00", 150);
